@@ -23,7 +23,7 @@ function buildTable(data) {
             }
         );
     });
-}
+};
 
 // Create function to filter data
 function handleClick() {
@@ -42,10 +42,10 @@ function handleClick() {
     // Rebuild table using filtered data
     // @NOTE: If no date was entered, then filteredData will be original tableData
     buildTable(filteredData);
-}
+};
 
 // Attach event to listen for filter button
-d3.selectAll("#filter-btn").on("click", handleClick());
+d3.selectAll("#filter-btn").on("click", handleClick);
 
 // Build table when page loads
 buildTable(tableData);
